@@ -1,34 +1,31 @@
 # Scripts
 
-A collection of reusable scripts for general-purpose automation and utility tasks. These scripts are designed to be modular and easy to integrate into various workflows and projects.
-
-## Overview
-
-This repository contains a variety of scripts that can be used to streamline common development and operational tasks. Each script is self-contained and can be used independently or combined with others to create more complex automation workflows.
-
-## Usage
-
-Each script can be executed directly from the command line. Ensure you have the appropriate permissions and dependencies installed before running.
-
-### Prerequisites
-
-- Bash shell (for shell scripts)
-- Required tools/dependencies for specific scripts (check individual script documentation)
-
-### Running a Script
-
-```bash
-bash script-name.sh
-```
+A collection of reusable scripts for general-purpose automation and utility tasks. Each script lives in its own directory with dedicated documentation.
 
 ## Scripts
 
-- `setup-github-deploy-key.sh` - Setup and configure GitHub deploy keys
+| Script | Description |
+|--------|-------------|
+| [setup-github-deploy-key](./setup-github-deploy-key/) | Generate and register SSH deploy keys on GitHub repos |
 
-## Contributing
+## Usage
 
-Feel free to add new scripts or improve existing ones. Ensure scripts are well-documented and follow best practices for reusability.
+Each script directory contains its own `README.md` with prerequisites, usage instructions, and examples. Browse the folder or run directly:
 
-## License
+```bash
+# Run any script directly from GitHub
+curl -sL https://raw.githubusercontent.com/DishantPal/scripts/master/<script-folder>/script.sh | bash
+```
 
-[Add your license here]
+## Structure
+
+```
+scripts/
+├── README.md
+├── setup-github-deploy-key/
+│   ├── script.sh
+│   └── README.md
+└── ...
+```
+
+Each script is self-contained — grab just the folder you need.
